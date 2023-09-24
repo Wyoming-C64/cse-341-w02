@@ -1,0 +1,50 @@
+[
+  {
+    "firstName": "Mike",
+    "lastName": "Lewis",
+    "email": "wyoming.c64@gmail.com",
+    "favoriteColor": "Redd",
+    "birthday": "May 5"
+  },
+
+  {
+    "firstName": "Cari",
+    "lastName": "Lewis",
+    "email": "cari@email.com",
+    "favoriteColor": "Green",
+    "birthday": "June 22"
+  },
+
+  {
+    "firstName": "Melanie",
+    "lastName": "Lewis",
+    "email": "melanie@email.com",
+    "favoriteColor": "Purple",
+    "birthday": "June 26"
+  },
+
+  {
+    "firstName": "Braden",
+    "lastName": "Lewis",
+    "email": "braden@email.com",
+    "favoriteColor": "Trumpet Brass",
+    "birthday": "January 8"
+  },
+
+  {
+    "firstName": "Chris",
+    "lastName": "Lewis",
+    "email": "chris@email.com",
+    "favoriteColor": "Black Hole Black",
+    "birthday": "November 24"
+  },
+
+  {
+    "firstName": "Haelie",
+    "lastName": "Lewis",
+    "email": "haelie@email.com",
+    "favoriteColor": "Pinkalicious Pink",
+    "birthday": "August 8"
+  }
+
+]
