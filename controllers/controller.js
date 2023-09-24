@@ -3,7 +3,7 @@ const {ObjectId} = require('mongodb');
 
 
 const defaultRoute = async(req, res) => {
-  res.send("This is the default route.");
+  res.send("Default route - no data requested.");
 }
 
 const getData = async (req, res, next) => {
