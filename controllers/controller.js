@@ -1,8 +1,11 @@
 const mongoDb = require('../db/connect'); // Must connect to DB if not already.
 const {ObjectId} = require('mongodb');
 
-// Now we will replace it with access from the database. 
-    
+
+const defaultRoute = async(req, res) => {
+  res.send("This is the default route.");
+}
+
 const getData = async (req, res, next) => {
   if (req.query.id) {
     const myObjId = new ObjectId(req.query.id);    
@@ -22,5 +25,6 @@ const getData = async (req, res, next) => {
 };
 
   module.exports = {
+    defaultRoute,
     getData
   };
