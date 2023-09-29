@@ -7,7 +7,7 @@ const defaultRoute = async(req, res) => {
 }
 
 const getData = async (req, res, next) => {
-  const result = await mongoDb.getDb().db('contacts').collection('people').find();
+  const result = await mongoDb.getDb().db('ml341_user-db').collection('contacts').find();
   // Convert result to an array, THEN call a function to send data to frontend.
   result.toArray().then(        
     (lists) => {      
@@ -20,7 +20,7 @@ const getData = async (req, res, next) => {
 const getOne = async (req, res, next) => {
   const myObjId = new ObjectId(req.params.id);
   // Fetch a single document from the DB, based on the Object ID.
-  result = await mongoDb.getDb().db().collection('people').findOne( {"_id": myObjId });
+  const result = await mongoDb.getDb().db('ml341_user-db').collection('contacts').findOne( {"_id": myObjId });
   res.setHeader('Content-Type', 'application/json');  // Set the header to tell the client what to expect.
   res.status(200).json(result);                       // Set HTTP status and return only the matching result from the database.
 }
